@@ -1,0 +1,77 @@
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.plan-container .plan-subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.plan-container .plan-card {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.plan-container .plan-card .amount-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.plan-container .plan-card .amount-flex h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.plan-container .plan-card .circle-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-container .plan-card .checkmark {
+  font-size: 13px;
+}
+
+.plan-container .plan-card .plan-item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-container .plan-card .plan-item {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.paystack-white-btn button {
+  background-color: #fff;
+  color: #711a75;
+}
+
+@media screen and (max-width: 850px) {
+  .plan-container .plan-subcontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

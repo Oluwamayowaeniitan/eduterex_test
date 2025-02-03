@@ -1,0 +1,110 @@
+.staff-manager-container {
+  padding: 40px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.staff-manager-container .staff-table {
+  width: 100%;
+  height: 100%;
+}
+
+.staff-manager-container table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.staff-manager-container table td,
+.staff-manager-container table th {
+  padding: 10px 15px;
+}
+
+.staff-manager-container table tr:hover {
+  background-color: #e6f7ff;
+  cursor: pointer;
+}
+
+.odd-table {
+  background-color: #f9f9f9;
+}
+
+.even-table {
+  background-color: #fff;
+}
+
+.student-class {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.action-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #711a75;
+}
+
+.action-icon:hover {
+  color: brown;
+}
+
+.no-record-container {
+  height: 100%;
+}
+
+.staff-manager-container .tfm-action {
+  display: flex;
+  width: max-content;
+  gap: 10px;
+  align-items: center;
+}
+
+.staff-manager-container .tfm-action select {
+  padding: 5px;
+  border-radius: 10px;
+  padding-left: 30px;
+}
+
+.manager-action-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .staff-manager-container {
+    padding: 20px 10px;
+  }
+
+  .staff-manager-container .tfm-action {
+    gap: 10px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .manager-action-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .staff-manager-container .staff-table {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,261 @@
+.dashboard-container {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  box-sizing: border-box;
+  height: calc(100% - 30px);
+  overflow: auto;
+}
+
+.dashboard-main {
+  width: 75%;
+}
+
+.dashboard-aside {
+  width: 25%;
+}
+
+.dashboard-main,
+.dashboard-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+}
+
+.d-card {
+  padding: 30px;
+  background-color: #ffadbc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 1.5;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.d-card-dark {
+  padding: 30px;
+  background-color: #711a75;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 1.5;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.d-card-icon {
+  font-size: 20px;
+  background-color: #711a75;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-card-icon-dark {
+  font-size: 20px;
+  background-color: #f3e8ff;
+  color: #711a75;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-top-cards {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.d-card h3,
+.d-card-dark h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.d-middle-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.d-student-chart {
+  width: 35%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.d-attendance-chart {
+  width: 65%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.d-student-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-student-chart-header p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.d-student-chart-header .d-card-icon {
+  margin-bottom: 0px;
+}
+
+.d-tuition-chart {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 851px) and (max-width: 1300px) {
+  .dashboard-container {
+    padding: 25px 20px;
+    gap: 20px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .dashboard-main {
+    width: 75%;
+    gap: 20px;
+  }
+
+  .dashboard-aside {
+    width: 25%;
+    gap: 20px;
+  }
+
+  .d-top-cards {
+    gap: 20px;
+  }
+
+  .d-card,
+  .d-card-dark {
+    padding: 20px;
+  }
+
+  .d-card-icon,
+  .d-card-icon-dark {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .d-card h3,
+  .d-card-dark h3 {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .d-middle-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .d-student-chart {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .d-attendance-chart {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .bottom-part {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .dashboard-container {
+    flex-direction: column;
+    padding: 25px 10px;
+    gap: 20px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .dashboard-main {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .dashboard-aside {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .d-top-cards {
+    display: grid;
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    gap: 10px;
+    box-sizing: border-box;
+  }
+
+  .d-card,
+  .d-card-dark {
+    padding: 20px;
+  }
+
+  .d-card-icon,
+  .d-card-icon-dark {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .d-card h3,
+  .d-card-dark h3 {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .d-middle-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .d-student-chart {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .d-attendance-chart {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .bottom-part {
+    display: flex;
+    gap: 10px;
+  }
+}
