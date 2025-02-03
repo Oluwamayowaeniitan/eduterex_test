@@ -1,0 +1,11 @@
+.selection-section .checkbox-group,
+.selection-section .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.selection-section p input {
+  margin-right: 10px;
+}
